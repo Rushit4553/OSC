@@ -13,20 +13,20 @@ import android.view.ViewGroup;
  * Created by admin on 05-Aug-17.
  */
 
-public class HelpFragment extends Fragment {
+public class CounsellingFragment extends Fragment {
 
     View myView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.help_fragment,container,false);
+        myView = inflater.inflate(R.layout.con_fragment,container,false);
         return myView;
     }
     @Override
     public void onResume() {
         super.onResume();
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Help");
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setSubtitle(null);
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Services");
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setSubtitle("Counselling");
     }
 }

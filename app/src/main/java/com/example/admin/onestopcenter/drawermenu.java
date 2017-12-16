@@ -1,6 +1,7 @@
 package com.example.admin.onestopcenter;
 
-import android.app.FragmentManager;
+//import android.app.FragmentManager;
+import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -30,7 +31,7 @@ public class drawermenu extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-        FragmentManager fragmentManager = getFragmentManager();
+        FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.content_frame,new HomeFragment(),"home").addToBackStack("home").commit();
         getSupportActionBar().setTitle("One Stop Center");
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -74,13 +75,14 @@ public class drawermenu extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        FragmentManager fragmentManager = getFragmentManager();
+        FragmentManager fragmentManager = getSupportFragmentManager();
         if (id == R.id.nav_home) {
             fragmentManager.beginTransaction().replace(R.id.content_frame,new HomeFragment(),"home").addToBackStack("home").commit();
             getSupportActionBar().setTitle("One Stop Center");
         } else if (id == R.id.nav_comp) {
             fragmentManager.beginTransaction().replace(R.id.content_frame,new CompFragment(),"comp").addToBackStack("comp").commit();
             getSupportActionBar().setTitle("Services");
+            //getSupportActionBar().setSubtitle("FIR");
         } else if (id == R.id.nav_status) {
             fragmentManager.beginTransaction().replace(R.id.content_frame,new StatusFragment(),"status").addToBackStack("status").commit();
             getSupportActionBar().setTitle("Status");

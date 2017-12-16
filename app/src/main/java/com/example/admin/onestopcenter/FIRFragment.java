@@ -1,6 +1,7 @@
 package com.example.admin.onestopcenter;
 
-import android.app.Fragment;
+//import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -48,7 +49,7 @@ public class FIRFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Filing FIR");
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setSubtitle(null);
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Services");
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setSubtitle("Filing FIR");
     }
 }
