@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">One Stop Center</string>
+    <string name="title_activity_drawermenu">drawermenu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="video">Video\nConferencing</string>
+    <string name="fir">Filing FIR</string>
+    <string name="medical">Medical Assistance</string>
+    <string name="shelter">Shelter</string>
+    <string name="counselling">Counselling</string>
+
+    <string-array name="state">
+
+        <item>Gujarat</item>
+        <item>MP</item>
+        <item>Rajasthan</item>
+        <item>Maharastra</item>
+
+    </string-array>
+
+
+    <string-array name="city">
+
+        <item>Surat</item>
+        <item>Mumbai</item>
+        <item>Jaypur</item>
+
+
+    </string-array>
+
+</resources>
