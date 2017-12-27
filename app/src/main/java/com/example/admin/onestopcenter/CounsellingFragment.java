@@ -26,7 +26,7 @@ public class CounsellingFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Services");
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setSubtitle("Counselling");
+        //((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Services");
+        //((AppCompatActivity)getActivity()).getSupportActionBar().setSubtitle("Counselling");
     }
 }

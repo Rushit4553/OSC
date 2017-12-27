@@ -26,7 +26,7 @@ public class HelpFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Help");
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setSubtitle(null);
+        //((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Help");
+        //((AppCompatActivity)getActivity()).getSupportActionBar().setSubtitle(null);
     }
 }

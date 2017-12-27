@@ -81,17 +81,17 @@ public class drawermenu extends AppCompatActivity
             getSupportActionBar().setTitle("One Stop Center");
         } else if (id == R.id.nav_comp) {
             fragmentManager.beginTransaction().replace(R.id.content_frame,new CompFragment(),"comp").addToBackStack("comp").commit();
-            getSupportActionBar().setTitle("Services");
+            // getSupportActionBar().setTitle("Services");
             //getSupportActionBar().setSubtitle("FIR");
         } else if (id == R.id.nav_status) {
             fragmentManager.beginTransaction().replace(R.id.content_frame,new StatusFragment(),"status").addToBackStack("status").commit();
-            getSupportActionBar().setTitle("Status");
+            //getSupportActionBar().setTitle("Status");
         } else if (id == R.id.nav_scheme) {
             fragmentManager.beginTransaction().replace(R.id.content_frame,new SchemeFragment(),"scheme").addToBackStack("scheme").commit();
-            getSupportActionBar().setTitle("Scheme");
+            //getSupportActionBar().setTitle("Scheme");
         } else if (id == R.id.nav_help) {
             fragmentManager.beginTransaction().replace(R.id.content_frame,new HelpFragment(),"help").addToBackStack("help").commit();
-            getSupportActionBar().setTitle("Help");
+            //getSupportActionBar().setTitle("Help");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

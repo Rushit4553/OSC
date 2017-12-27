@@ -1,30 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/doc_name"
+    <android.support.v7.widget.CardView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_margin="10dp"/>
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/phone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/ex_add"
-        android:layout_margin="10dp"
-        android:src="@drawable/ic_phone_black_24dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/ex_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/ic_add_circle_outline_black_24dp"
-        android:layout_margin="10dp"
-        android:clickable="true"/>
+            <TextView
+                android:id="@+id/doc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"/>
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toLeftOf="@+id/ex_add"
+                android:src="@drawable/ic_phone_black_24dp"/>
+
+            <ImageView
+                android:id="@+id/ex_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
 
 </RelativeLayout>

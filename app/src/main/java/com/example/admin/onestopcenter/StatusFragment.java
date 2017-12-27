@@ -21,12 +21,13 @@ public class StatusFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         myView = inflater.inflate(R.layout.status_fragment,container,false);
+        //((AppCompatActivity)getActivity()).getSupportActionBar().hide();
         return myView;
     }
     @Override
     public void onResume() {
         super.onResume();
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Status");
-        ((AppCompatActivity)getActivity()).getSupportActionBar().setSubtitle(null);
+        //((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("Status");
+        //((AppCompatActivity)getActivity()).getSupportActionBar().setSubtitle(null);
     }
 }

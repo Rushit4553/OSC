@@ -28,6 +28,12 @@ public class TabAdapter extends FragmentPagerAdapter {
                 return new MedicalFragment();
             case 2:
                 return new CounsellingFragment();
+
+            case 3:
+                return new ShelterFragment();
+            case 4:
+                return new VideoFragment();
+
         }
         return null;
     }
@@ -45,6 +51,10 @@ public class TabAdapter extends FragmentPagerAdapter {
                 return "Medical";
             case 2:
                 return "Counselling";
+            case 3:
+                return "Shelter";
+            case 4:
+                return "Video";
         }
         return null;
     }

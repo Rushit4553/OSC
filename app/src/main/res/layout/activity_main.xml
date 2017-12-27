@@ -1,82 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.admin.onestopcenter.MainActivity"
-    >
-
-    <ProgressBar
-        android:id="@+id/regi_progress"
-        style="?android:attr/progressBarStyleLarge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="8dp"
-        android:visibility="gone" />
+    android:background="@color/background"
+    tools:context="com.example.admin.onestopcenter.MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <LinearLayout
-            android:id="@+id/title_view"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
             <ImageView
-                android:id="@+id/icon"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
-                android:layout_margin="16dp" />
+                android:layout_margin="16dp"
+                android:src="@mipmap/logo" />
 
-            <TextView
-                android:id="@+id/title"
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:fontFamily="serif"
-                 android:text="@string/app_name"
-                android:textAllCaps="true"
-                android:textColor="@color/font"
-                android:textSize="20dp"
-                android:textStyle="bold"/>
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:elevation="3dp">
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <android.support.design.widget.TextInputEditText
-                    android:id="@+id/login"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:fontFamily="serif"
-                    android:hint="Login ID"
-                    android:inputType="text"/>
+                    android:layout_height="wrap_content">
 
-            </android.support.design.widget.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/logi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="16dp"
+                        android:text="Login"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-                <android.support.design.widget.TextInputEditText
-                    android:id="@+id/pass"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:fontFamily="serif"
-                    android:hint="Password"
-                    android:inputType="textPassword"/>
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/login_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/logi"
+                        android:paddingTop="16dp">
 
-            </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/login"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:fontFamily="serif"
+                            android:hint="Login ID"
+                            android:inputType="text"
+                            android:textColorHint="#000000" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/login_txt"
+                        android:paddingBottom="16dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp"
+                            android:fontFamily="serif"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:textColorHint="#000000" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
 
             <Button
                 android:id="@+id/login_button"
@@ -127,4 +142,4 @@
 
     </ScrollView>
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

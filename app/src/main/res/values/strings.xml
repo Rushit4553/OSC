@@ -32,4 +32,35 @@
 
     </string-array>
 
+    <string-array name="district">
+
+        <item>Surat</item>
+        <item>Mumbai</item>
+        <item>Jaypur</item>
+
+
+    </string-array>
+
+    <string-array name="police">
+
+        <item>Umra</item>
+        <item>Adajan</item>
+
+
+    </string-array>
+
+
+    <string-array name="schemes">
+
+        <item>One Stop Centre - Scheme Document -Download (340.17 KB) pdf</item>
+
+        <item>Revised Guideline for setting up One Stop Centre in 150 additional locations in second phase -Download (1.3 MB) pdf</item>
+
+        <item>Revised scheme for setting up One Stop Centre in 150 additional locations in second phase -Download (651.14 KB) pdf</item>
+
+        <item>Revised Guideline for setting up One Stop Centre in 150 additional locations in second phase -Download (1.3 MB) pdf</item>
+
+    </string-array>
+
+
 </resources>

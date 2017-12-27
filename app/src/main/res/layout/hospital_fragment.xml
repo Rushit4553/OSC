@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,15 +12,247 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
             android:text="@string/medical"
             android:textSize="20sp"
-            android:layout_margin="16dp"
-            android:layout_gravity="center"/>
+            android:textStyle="bold|normal" />
 
-        <ListView
-            android:id="@+id/cust_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+
+
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/doc_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="8dp"
+                        android:text="Dr. Dipti Patel"
+
+
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/doc_spec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="MD Obstetrtics and Gynaecology" />
+
+                    <TextView
+                        android:id="@+id/hosp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="Love and Maternity Clinic" />
+
+                    <TextView
+                        android:id="@+id/hosp_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/hosp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="Rander, Surat" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@+id/ex_add"
+                    android:src="@drawable/ic_phone_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/ex_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/doc_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="8dp"
+                        android:text="Dr. Rushabh Mehta"
+
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/doc_spec1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="MBBS, M.S(gynaecology)" />
+
+                    <TextView
+                        android:id="@+id/hosp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="EVA hospital" />
+
+                    <TextView
+                        android:id="@+id/hosp_add1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/hosp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="Adajan , Surat" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/phone1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@+id/ex_add1"
+                    android:src="@drawable/ic_phone_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/ex_add1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/doc_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="8dp"
+                        android:text="Dr. Hemant Patel"
+
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/doc_spec2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="Doctor of Medicine" />
+
+                    <TextView
+                        android:id="@+id/hosp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="Jyoti hospital" />
+
+                    <TextView
+                        android:id="@+id/hosp_add2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/hosp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="Adajan , Surat" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/phone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_toLeftOf="@+id/ex_add2"
+                    android:src="@drawable/ic_phone_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/ex_add2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
 
     </LinearLayout>
 

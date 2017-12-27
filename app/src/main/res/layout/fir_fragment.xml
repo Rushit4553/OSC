@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:elevation="3dp">
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -10,10 +22,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
         android:text="@string/fir"
         android:textSize="20sp"
-        android:layout_margin="16dp"
-        android:layout_gravity="center"/>
+        android:textStyle="bold|normal" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,28 +36,28 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="State"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:text="State" />
 
         <Spinner
             android:id="@+id/state"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/state"
-            android:layout_margin="10dp"/>
+            android:layout_marginTop="10dp"
+            android:entries="@array/state" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="City"
-            android:layout_margin="10dp"/>
+            android:layout_marginTop="10dp"
+            android:text="City" />
 
         <Spinner
             android:id="@+id/city"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:entries="@array/city"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            android:entries="@array/city" />
 
     </LinearLayout>
 
@@ -55,15 +68,181 @@
         android:layout_height="wrap_content">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/login"
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Place of Occurrence"
             android:layout_margin="16dp"
             android:fontFamily="serif"
-            android:inputType="text"/>
+            android:hint="Name"
+            android:inputType="text" />
 
     </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/father"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="serif"
+            android:hint="Father's name"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="serif"
+            android:hint="Mobile number"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="serif"
+            android:hint="Present address"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="serif"
+            android:hint="Email address"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="District" />
+
+    <Spinner
+        android:id="@+id/district"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:entries="@array/district" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Police Station" />
+
+    <Spinner
+        android:id="@+id/policeStation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:entries="@array/police" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/dateOfIncident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="serif"
+            android:hint="Date of incident"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/placeOfIncident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="serif"
+            android:hint="Place of incident"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/timeOfIncident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="serif"
+            android:hint="Time of incident"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/districtOfIncident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="serif"
+            android:hint="District of incident"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/Information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="serif"
+            android:hint="Enter more information"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -73,17 +252,17 @@
             android:id="@+id/esign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="e Sign"
+            android:layout_alignParentLeft="true"
             android:layout_margin="16dp"
-            android:layout_alignParentLeft="true"/>
+            android:text="e Sign" />
 
         <Button
             android:id="@+id/evcsign"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="evc Sign"
+            android:layout_alignParentRight="true"
             android:layout_margin="16dp"
-            android:layout_alignParentRight="true"/>
+            android:text="evc Sign" />
 
 
     </RelativeLayout>
@@ -92,11 +271,14 @@
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit"
+        android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:layout_gravity="center"/>
+        android:text="Submit" />
 
 
 </LinearLayout>
 
+        </android.support.v7.widget.CardView>
+
+    </ScrollView>
 </RelativeLayout>
