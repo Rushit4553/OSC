@@ -26,7 +26,6 @@ public class HomeFragment extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        //((AppCompatActivity)getActivity()).getSupportActionBar().setTitle("One Stop Center");
-        //((AppCompatActivity)getActivity()).getSupportActionBar().setSubtitle(null);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("One Stop Center");
     }
 }
